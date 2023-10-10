@@ -1,7 +1,7 @@
-
 import os
 from random import choice
 from nltk.tag import pos_tag
+
 # find verb in sentence
 from nltk.tokenize import word_tokenize
 import nltk
@@ -24,7 +24,6 @@ def random_story(folder=None):
     return story
 
 
-
 def get_random_sentence(story):
     """Get a random sentence from a story."""
     paragraph = choice(story).split(". ")
@@ -38,12 +37,10 @@ def get_random_sentence(story):
     return sentence + "."
 
 
-
-
 def find_verb(sentence):
     verbs = []
     pos_tags = pos_tag(word_tokenize(sentence))
-    print(pos_tags)
+    
     for word, tag in pos_tags:
         if tag.startswith("VBD") or tag.startswith("VBP"):
             verbs.append(word)
@@ -55,13 +52,8 @@ def find_verb(sentence):
     return verbs
 
 
-
-
-
-
 # nltk.download('brown')
 text = nltk.Text(word.lower() for word in nltk.corpus.brown.words())
-
 
 
 def create_similar_word_bank(words, num=4):
@@ -77,7 +69,6 @@ def create_similar_word_bank(words, num=4):
         # bank.append(text.similar(word, num=num))
 
     return bank
-
 
 
 # CC - coordinating conjunction
@@ -156,7 +147,6 @@ def get_infinitive_form(word):
     return "to " + lemmatizer.lemmatize(word, pos="v")
 
 
-
 def generate_fill_worksheet():
     sentences = []
     problems = int(input("Enter the number of questions"))
@@ -168,11 +158,9 @@ def generate_fill_worksheet():
             continue
 
         new = random_sentence.replace(verbs[0], "_" * len(verbs[0]), 1)
-        print(verbs[0])
 
         if new not in sentences:
             sentences.append([new + f" ({get_infinitive_form(verbs[0])})", verbs[0]])
-
 
     worksheet = "\tFill in the Verb\n\n"
 
@@ -188,11 +176,11 @@ def generate_fill_worksheet():
     return worksheet
 
 
-from nltk.corpus import wordnet
-
-
 def get_definitions(word):
     return [syn.definition() for syn in wordnet.synsets(word)]
+
+def is_verb(word):
+    return len(find_verb(word)) > 0
 
 # get all complex nouns in sentence
 # input: sentence
@@ -203,7 +191,6 @@ def get_complex_nouns(sentence):
         if len(chunk.text.split()) > 1:
             nouns.append(chunk.text)
     return nouns
-
 
 
 import nltk
@@ -218,7 +205,7 @@ nltk.download("words")
 
 # Sample sentence
 # sentence = "This is a complicated sentence with various intricate words and powerful emotions."
-story = random_story()
+""" story = random_story()
 sentence = ""
 
 for sent in story:
@@ -230,7 +217,7 @@ print(sentence)
 words = word_tokenize(sentence)
 
 # Calculate word frequency using NLTK's FreqDist
-word_freq = FreqDist(words)
+word_freq = FreqDist(words) """
 
 corpus = nltk.corpus.brown.words()  # Replace with your own corpus if available
 corpus_freq = FreqDist(corpus)
@@ -248,7 +235,7 @@ def calculate_lexical_score(word):
 
 
 # Calculate lexical scores for each word in the sentence
-lexical_scores = {word: calculate_lexical_score(word) for word in words}
+""" lexical_scores = {word: calculate_lexical_score(word) for word in words}
 
 # Print the lexical scores
 for word, score in lexical_scores.items():
@@ -259,8 +246,7 @@ print("\nTop 5 words with highest lexical scores:")
 for word, score in sorted(lexical_scores.items(), key=lambda x: x[1], reverse=True)[:5]:
     print(f"{word}: {score:.2f}")
 
-
-
+ """
 import nltk
 from nltk.tokenize import SyllableTokenizer
 
@@ -276,11 +262,7 @@ def get_syllables(word):
     syllables_with_dots = " · ".join(syllables)
 
     # Print the word with syllables separated by dots
-    return syllables_with_dots
-
-
-
-
+    return syllables_with_dots, len(syllables)
 
 
 from nltk.corpus import cmudict
@@ -298,7 +280,6 @@ def get_sounds(text):
     return line
 
 
-
 import nltk
 from nltk.tag import pos_tag
 from nltk.tokenize import word_tokenize
@@ -308,42 +289,77 @@ nltk.download("punkt")
 nltk.download("averaged_perceptron_tagger")
 
 # Sentence containing verbs with different tenses
-story = random_story()
+""" story = random_story()
 sentence = " ".join(story)
-print(sentence)
+print(sentence) """
 
-# Tokenize the sentence
-words = word_tokenize(sentence)
+def get_verb_types(sentence):
+    # Tokenize the sentence
+    words = word_tokenize(sentence)
 
-# Perform part-of-speech tagging
-pos_tags = pos_tag(words)
+    # Perform part-of-speech tagging
+    pos_tags = pos_tag(words)
 
-# Initialize lists to categorize verbs by tense
-infinitive_verbs = []
-past_tense_verbs = []
-present_participle_verbs = []
-past_participle_verbs = []
-present_simple_verbs = []
+    # Initialize lists to categorize verbs by tense
+    infinitive_verbs = []
+    past_tense_verbs = []
+    present_participle_verbs = []
+    past_participle_verbs = []
+    present_simple_verbs = []
 
-# Iterate through the tagged words to categorize verbs by tense
-for word, tag in pos_tags:
-    if tag == "VB":
-        infinitive_verbs.append(word)
-    elif tag == "VBD":
-        past_tense_verbs.append(word)
-    elif tag == "VBG":
-        present_participle_verbs.append(word)
-    elif tag == "VBN":
-        past_participle_verbs.append(word)
-    elif tag == "VBP" or tag == "VBZ":
-        present_simple_verbs.append(word)
+    # Iterate through the tagged words to categorize verbs by tense
+    for word, tag in pos_tags:
+        if tag == "VB":
+            infinitive_verbs.append(word)
+        elif tag == "VBD":
+            past_tense_verbs.append(word)
+        elif tag == "VBG":
+            present_participle_verbs.append(word)
+        elif tag == "VBN":
+            past_participle_verbs.append(word)
+        elif tag == "VBP" or tag == "VBZ":
+            present_simple_verbs.append(word)
 
-# Print the categorized verbs
-print("Infinitive Verbs:", infinitive_verbs)
-print("Past Tense Verbs:", past_tense_verbs)
-print("Present Participle Verbs (Gerunds):", present_participle_verbs)
-print("Past Participle Verbs:", past_participle_verbs)
-print(
-    "Present Simple Verbs (3rd person singular and present participle):",
-    present_simple_verbs,
-)
+    # Print the categorized verbs
+    print("Infinitive Verbs:", infinitive_verbs)
+    print("Past Tense Verbs:", past_tense_verbs)
+    print("Present Participle Verbs (Gerunds):", present_participle_verbs)
+    print("Past Participle Verbs:", past_participle_verbs)
+    print(
+        "Present Simple Verbs (3rd person singular and present participle):",
+        present_simple_verbs,
+    )
+
+    # VB, VBD, VBG, VBN, VBP or VBZ
+    return infinitive_verbs, past_tense_verbs, present_participle_verbs, past_participle_verbs, present_simple_verbs
+
+def get_nouns(sentence):
+    words = word_tokenize(sentence)
+
+    # Perform part-of-speech tagging
+    pos_tags = pos_tag(words)
+
+    # Initialize lists to categorize verbs by tense
+    single_nouns = []
+    plural_nouns = []
+    proper_sing_noun = []
+    proper_plur_noun = []
+
+    # Iterate through the tagged words to categorize verbs by tense
+    for word, tag in pos_tags:
+        if tag == "NN":
+            single_nouns.append(word)
+        elif tag == "NNS":
+            plural_nouns.append(word)
+        elif tag == "NNP":
+            proper_sing_noun.append(word)
+        elif tag == "NNPS":
+            proper_plur_noun.append(word)
+
+    # Print the categorized verbs
+    print("Single Nouns:", single_nouns)
+    print("Plural Nouns:", plural_nouns)
+    print("Proper Singular Nouns:", proper_sing_noun)
+    print("Proper Plural Nouns:", proper_plur_noun)
+    return single_nouns, plural_nouns, proper_sing_noun, proper_plur_noun
+    
