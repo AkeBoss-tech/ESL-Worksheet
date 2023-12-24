@@ -2,14 +2,44 @@
 <html>
 <head>
     <title>Worksheet Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
 </head>
 <body>
-    <h1>Welcome to the Worksheet Generator</h1>
-    <ul>
-        <li><a href="/generate/fill_worksheet">Generate Fill Worksheet</a></li>
-        <li><a href="/generate/rearrange_worksheet">Generate Rearrange Worksheet</a></li>
-        <li><a href="/generate/vocab_worksheet">Generate Vocab Worksheet</a></li>
-        <li><a href="/generate/worksheet">Generate Vocab Worksheet</a></li>
-    </ul>
+    <div class="container">
+        <h1 class="my-4">Welcome to the ESL Worksheet Generator!</h1>
+        <p class="lead">This is a simple tool that allows you to generate different types of worksheets. Click on the links below to generate a worksheet.</p>
+        <ul class="list-group">
+            <li class="list-group-item">
+                <a href="/generate/fill_worksheet">Generate Fill Worksheet</a>
+            </li>
+            <li class="list-group-item">
+                <a href="/generate/rearrange_worksheet">Generate Rearrange Worksheet</a>
+                <div class="mt-2">
+                    Levels: 
+                    {% for level in range(1, 7) %}
+                        <a href="/generate/rearrange_worksheet/{{ level }}"> {{ level }} </a>
+                    {% endfor %}
+                </div>
+            </li>
+            <li class="list-group-item">
+                <a href="/generate/vocab_worksheet">Generate Vocab Worksheet</a>
+                <div class="mt-2">
+                    Levels: 
+                    {% for level in range(1, 7) %}
+                        <a href="/generate/vocab_worksheet/{{ level }}"> {{ level }} </a>
+                    {% endfor %}
+                </div>
+            </li>
+            <li class="list-group-item">
+                <a href="/generate/worksheet">Generate Complete Worksheet</a>
+                <div class="mt-2">
+                    Levels: 
+                    {% for level in range(1, 7) %}
+                        <a href="/generate/worksheet/{{ level }}"> {{ level }} </a>
+                    {% endfor %}
+                </div>
+            </li>
+        </ul>
+    </div>
 </body>
 </html>

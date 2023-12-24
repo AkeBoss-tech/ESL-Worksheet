@@ -23,6 +23,17 @@ def random_story(folder=None):
         story = [line for line in story if line != "\n"]
     return story
 
+def random_story_level(level=1):
+    files = os.listdir("ESL-stuff/level")
+    print(files)
+
+    choices = [file for file in files if file.startswith("file-" + level)]
+    print(choices)
+    with open("ESL-stuff/level/" + choice(choices), "r") as f:
+        story = f.readlines()
+        # get rid of empty lines
+        story = [line for line in story if line != "\n"]
+    return story
 
 def get_random_sentence(story):
     """Get a random sentence from a story."""
@@ -133,6 +144,12 @@ def generate_rearrange_worksheet(story=random_story(), num=10):
     
     print(worksheet)
     return worksheet
+
+def keep_trying_rearrange_worksheet(num=10):
+    try:
+        return generate_rearrange_worksheet(random_story(), num)
+    except:
+        return keep_trying_rearrange_worksheet(num)
 
 # nltk.download('brown')
 text = nltk.Text(word.lower() for word in nltk.corpus.brown.words())
@@ -514,7 +531,7 @@ def generate_full_worksheet(story=random_story()):
     # add definition worksheet
     full_worksheet += generate_vocab_worksheet(story)
 
-    full_worksheet += generate_rearrange_worksheet(story, num=5)
+    full_worksheet += generate_rearrange_worksheet(story, num=10)
 
     print(full_worksheet)
     return full_worksheet
