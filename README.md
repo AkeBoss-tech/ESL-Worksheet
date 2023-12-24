@@ -1,5 +1,6 @@
 # ESL Worksheet Generator
 ![Gif of ESL Worksheet Generator](working.gif)
+
 This is a Flask app that uses text scraped from [ESL Fast](https://www.eslfast.com/) to generate simple grammar worksheets. 
 
 The GitHub pages offer a glimpse into some of the possible worksheets it can generate.
