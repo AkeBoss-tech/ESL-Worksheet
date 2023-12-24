@@ -1,0 +1,301 @@
+<!doctype html>
+<html lang=en>
+  <head>
+    <title>IndexError: list index out of range
+ // Werkzeug Debugger</title>
+    <link rel="stylesheet" href="?__debugger__=yes&amp;cmd=resource&amp;f=style.css">
+    <link rel="shortcut icon"
+        href="?__debugger__=yes&amp;cmd=resource&amp;f=console.png">
+    <script src="?__debugger__=yes&amp;cmd=resource&amp;f=debugger.js"></script>
+    <script>
+      var CONSOLE_MODE = false,
+          EVALEX = true,
+          EVALEX_TRUSTED = false,
+          SECRET = "wOpexAaTfIEIK33QPhFB";
+    </script>
+  </head>
+  <body style="background-color: #fff">
+    <div class="debugger">
+<h1>IndexError</h1>
+<div class="detail">
+  <p class="errormsg">IndexError: list index out of range
+</p>
+</div>
+<h2 class="traceback">Traceback <em>(most recent call last)</em></h2>
+<div class="traceback">
+  <h3></h3>
+  <ul><li><div class="frame" id="frame-2198298892032">
+  <h4>File <cite class="filename">"C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py"</cite>,
+      line <em class="line">2213</em>,
+      in <code class="function">__call__</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">    </span>def __call__(self, environ: dict, start_response: t.Callable) -&gt; t.Any:</pre>
+<pre class="line before"><span class="ws">        </span>&#34;&#34;&#34;The WSGI server calls the Flask application object as the</pre>
+<pre class="line before"><span class="ws">        </span>WSGI application. This calls :meth:`wsgi_app`, which can be</pre>
+<pre class="line before"><span class="ws">        </span>wrapped to apply middleware.</pre>
+<pre class="line before"><span class="ws">        </span>&#34;&#34;&#34;</pre>
+<pre class="line current"><span class="ws">        </span>return self.wsgi_app(environ, start_response)</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298892928">
+  <h4>File <cite class="filename">"C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py"</cite>,
+      line <em class="line">2193</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line before"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line before"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line before"><span class="ws">                </span>error = e</pre>
+<pre class="line current"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre>
+<pre class="line after"><span class="ws">                </span>raise</pre>
+<pre class="line after"><span class="ws">            </span>return response(environ, start_response)</pre>
+<pre class="line after"><span class="ws">        </span>finally:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893040">
+  <h4>File <cite class="filename">"C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py"</cite>,
+      line <em class="line">2190</em>,
+      in <code class="function">wsgi_app</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">        </span>ctx = self.request_context(environ)</pre>
+<pre class="line before"><span class="ws">        </span>error: BaseException | None = None</pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>try:</pre>
+<pre class="line before"><span class="ws">                </span>ctx.push()</pre>
+<pre class="line current"><span class="ws">                </span>response = self.full_dispatch_request()</pre>
+<pre class="line after"><span class="ws">            </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">                </span>error = e</pre>
+<pre class="line after"><span class="ws">                </span>response = self.handle_exception(e)</pre>
+<pre class="line after"><span class="ws">            </span>except:  # noqa: B001</pre>
+<pre class="line after"><span class="ws">                </span>error = sys.exc_info()[1]</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893152">
+  <h4>File <cite class="filename">"C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py"</cite>,
+      line <em class="line">1486</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line before"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line before"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line current"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre>
+<pre class="line after"><span class="ws">        </span>self,</pre>
+<pre class="line after"><span class="ws">        </span>rv: ft.ResponseReturnValue | HTTPException,</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893264">
+  <h4>File <cite class="filename">"C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py"</cite>,
+      line <em class="line">1484</em>,
+      in <code class="function">full_dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">        </span>try:</pre>
+<pre class="line before"><span class="ws">            </span>request_started.send(self, _async_wrapper=self.ensure_sync)</pre>
+<pre class="line before"><span class="ws">            </span>rv = self.preprocess_request()</pre>
+<pre class="line before"><span class="ws">            </span>if rv is None:</pre>
+<pre class="line current"><span class="ws">                </span>rv = self.dispatch_request()</pre>
+<pre class="line after"><span class="ws">        </span>except Exception as e:</pre>
+<pre class="line after"><span class="ws">            </span>rv = self.handle_user_exception(e)</pre>
+<pre class="line after"><span class="ws">        </span>return self.finalize_request(rv)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def finalize_request(</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893376">
+  <h4>File <cite class="filename">"C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py"</cite>,
+      line <em class="line">1469</em>,
+      in <code class="function">dispatch_request</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">            </span>and req.method == &#34;OPTIONS&#34;</pre>
+<pre class="line before"><span class="ws">        </span>):</pre>
+<pre class="line before"><span class="ws">            </span>return self.make_default_options_response()</pre>
+<pre class="line before"><span class="ws">        </span># otherwise dispatch to the handler for that endpoint</pre>
+<pre class="line before"><span class="ws">        </span>view_args: dict[str, t.Any] = req.view_args  # type: ignore[assignment]</pre>
+<pre class="line current"><span class="ws">        </span>return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>def full_dispatch_request(self) -&gt; Response:</pre>
+<pre class="line after"><span class="ws">        </span>&#34;&#34;&#34;Dispatches the request and on top of that performs request</pre>
+<pre class="line after"><span class="ws">        </span>pre and postprocessing as well as HTTP exception catching and</pre>
+<pre class="line after"><span class="ws">        </span>error handling.</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893488">
+  <h4>File <cite class="filename">"C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\main.py"</cite>,
+      line <em class="line">40</em>,
+      in <code class="function">generate_full_worksheet2</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span># add routes that return worksheets for different levels using random_story_level(level)</pre>
+<pre class="line before"><span class="ws"></span>@app.route(&#39;/generate/worksheet/&lt;level&gt;&#39;, methods=[&#39;GET&#39;])</pre>
+<pre class="line before"><span class="ws"></span>def generate_full_worksheet2(level):</pre>
+<pre class="line before"><span class="ws">    </span>if level not in [&#39;1&#39;, &#39;2&#39;, &#39;3&#39;, &#39;4&#39;, &#39;5&#39;, &#39;6&#39;]:</pre>
+<pre class="line before"><span class="ws">        </span>return render_template(&#39;index.html&#39;)</pre>
+<pre class="line current"><span class="ws">    </span>worksheet = f&#34;# Level {level}\n\n&#34; + util.generate_full_worksheet(util.random_story_level(level))</pre>
+<pre class="line after"><span class="ws">    </span>html = markdown.markdown(worksheet, extensions=[&#39;markdown.extensions.tables&#39;])</pre>
+<pre class="line after"><span class="ws">    </span>with open(&#34;output.html&#34;, &#34;w&#34;) as f:</pre>
+<pre class="line after"><span class="ws">        </span>f.write(html)</pre>
+<pre class="line after"><span class="ws">    </span>return render_template(&#39;default.html&#39;, markdown_content=html)</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893600">
+  <h4>File <cite class="filename">"C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py"</cite>,
+      line <em class="line">528</em>,
+      in <code class="function">generate_full_worksheet</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span>full_worksheet += &#39;\n\n&#39;</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws">    </span># add worksheets for two verb types</pre>
+<pre class="line before"><span class="ws">    </span>for i in range(5):</pre>
+<pre class="line current"><span class="ws">        </span>full_worksheet += generate_worksheets_for_verb(story, verb_type=i)</pre>
+<pre class="line after"><span class="ws">        </span>full_worksheet += &#39;\n\n&#39;</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span># add definition worksheet</pre>
+<pre class="line after"><span class="ws">    </span>full_worksheet += generate_vocab_worksheet(story)</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893712">
+  <h4>File <cite class="filename">"C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py"</cite>,
+      line <em class="line">496</em>,
+      in <code class="function">generate_worksheets_for_verb</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span>verb_types_str = [&#34;infinitive&#34;, &#34;past tense&#34;, &#34;present participle&#34;, &#34;past participle&#34;, &#34;present simple&#34;]</pre>
+<pre class="line before"><span class="ws"></span> </pre>
+<pre class="line before"><span class="ws"></span>def generate_worksheets_for_verb(story=None, verb_type=1):</pre>
+<pre class="line before"><span class="ws">    </span>if story is None:</pre>
+<pre class="line before"><span class="ws">        </span>story = random_story()</pre>
+<pre class="line current"><span class="ws">    </span>sentences = get_sentences_with_verb(story, verb_type)</pre>
+<pre class="line after"><span class="ws">    </span>shuffle(sentences)</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>sentence_with_blanks = []</pre>
+<pre class="line after"><span class="ws">    </span>answers = []</pre>
+<pre class="line after"><span class="ws">    </span>for sentence in sentences:</pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893824">
+  <h4>File <cite class="filename">"C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py"</cite>,
+      line <em class="line">485</em>,
+      in <code class="function">get_sentences_with_verb</code></h4>
+  <div class="source "><pre class="line before"><span class="ws"></span># get verb index from the return type of above function</pre>
+<pre class="line before"><span class="ws"></span># 1 is infinitive, 2 is past tense, 3 is present participle, 4 is past participle, 5 is present simple</pre>
+<pre class="line before"><span class="ws"></span>def get_sentences_with_verb(story=random_story(), verb=1):</pre>
+<pre class="line before"><span class="ws">    </span>text = &#34; &#34;.join(story)</pre>
+<pre class="line before"><span class="ws">    </span>sentences = []</pre>
+<pre class="line current"><span class="ws">    </span>for sentence in split_into_sentences(text):</pre>
+<pre class="line after"><span class="ws">        </span>if len(get_verb_types(sentence)[verb]) &gt; 0:</pre>
+<pre class="line after"><span class="ws">            </span>print(get_verb_types(sentence)[verb])</pre>
+<pre class="line after"><span class="ws">            </span>sentences.append(sentence)</pre>
+<pre class="line after"><span class="ws">    </span>return sentences</pre>
+<pre class="line after"><span class="ws"></span> </pre></div>
+</div>
+
+<li><div class="frame" id="frame-2198298893936">
+  <h4>File <cite class="filename">"C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py"</cite>,
+      line <em class="line">100</em>,
+      in <code class="function">split_into_sentences</code></h4>
+  <div class="source "><pre class="line before"><span class="ws">                </span>sentences.append(sentence + punctuation_marks[i])</pre>
+<pre class="line before"><span class="ws">                </span>continue</pre>
+<pre class="line before"><span class="ws">            </span>if sentence[0].isupper() and len(sentence) &gt; 3:</pre>
+<pre class="line before"><span class="ws">                </span>sentences.append(sentence + punctuation_marks[i])</pre>
+<pre class="line before"><span class="ws">            </span>else:</pre>
+<pre class="line current"><span class="ws">                </span>sentences[-1] += sentence + punctuation_marks[i]</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws">    </span>sentences = [s.strip() for s in sentences]</pre>
+<pre class="line after"><span class="ws">    </span>return sentences</pre>
+<pre class="line after"><span class="ws"></span> </pre>
+<pre class="line after"><span class="ws"></span>def find_verb(sentence):</pre></div>
+</div>
+</ul>
+  <blockquote>IndexError: list index out of range
+</blockquote>
+</div>
+
+<div class="plain">
+    <p>
+      This is the Copy/Paste friendly version of the traceback.
+    </p>
+    <textarea cols="50" rows="10" name="code" readonly>Traceback (most recent call last):
+  File &#34;C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py&#34;, line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File &#34;C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py&#34;, line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File &#34;C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py&#34;, line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File &#34;C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py&#34;, line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File &#34;C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py&#34;, line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File &#34;C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py&#34;, line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File &#34;C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\main.py&#34;, line 40, in generate_full_worksheet2
+    worksheet = f&#34;# Level {level}\n\n&#34; + util.generate_full_worksheet(util.random_story_level(level))
+  File &#34;C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py&#34;, line 528, in generate_full_worksheet
+    full_worksheet += generate_worksheets_for_verb(story, verb_type=i)
+  File &#34;C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py&#34;, line 496, in generate_worksheets_for_verb
+    sentences = get_sentences_with_verb(story, verb_type)
+  File &#34;C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py&#34;, line 485, in get_sentences_with_verb
+    for sentence in split_into_sentences(text):
+  File &#34;C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py&#34;, line 100, in split_into_sentences
+    sentences[-1] += sentence + punctuation_marks[i]
+IndexError: list index out of range
+</textarea>
+</div>
+<div class="explanation">
+  The debugger caught an exception in your WSGI application.  You can now
+  look at the traceback which led to the error.  <span class="nojavascript">
+  If you enable JavaScript you can also use additional features such as code
+  execution (if the evalex feature is enabled), automatic pasting of the
+  exceptions and much more.</span>
+</div>
+      <div class="footer">
+        Brought to you by <strong class="arthur">DON'T PANIC</strong>, your
+        friendly Werkzeug powered traceback interpreter.
+      </div>
+    </div>
+
+    <div class="pin-prompt">
+      <div class="inner">
+        <h3>Console Locked</h3>
+        <p>
+          The console is locked and needs to be unlocked by entering the PIN.
+          You can find the PIN printed out on the standard output of your
+          shell that runs the server.
+        <form>
+          <p>PIN:
+            <input type=text name=pin size=14>
+            <input type=submit name=btn value="Confirm Pin">
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
+
+<!--
+
+Traceback (most recent call last):
+  File "C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2213, in __call__
+    return self.wsgi_app(environ, start_response)
+  File "C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2193, in wsgi_app
+    response = self.handle_exception(e)
+  File "C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\akash\AppData\Roaming\Python\Python310\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\main.py", line 40, in generate_full_worksheet2
+    worksheet = f"# Level {level}\n\n" + util.generate_full_worksheet(util.random_story_level(level))
+  File "C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py", line 528, in generate_full_worksheet
+    full_worksheet += generate_worksheets_for_verb(story, verb_type=i)
+  File "C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py", line 496, in generate_worksheets_for_verb
+    sentences = get_sentences_with_verb(story, verb_type)
+  File "C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py", line 485, in get_sentences_with_verb
+    for sentence in split_into_sentences(text):
+  File "C:\Users\akash\Documents\Coding Projects\ESL-Worksheet\util.py", line 100, in split_into_sentences
+    sentences[-1] += sentence + punctuation_marks[i]
+IndexError: list index out of range
+
+
+-->
