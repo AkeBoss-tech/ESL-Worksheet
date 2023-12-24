@@ -34,20 +34,61 @@ def get_random_sentence(story):
     if sentence[0].islower():
         return get_random_sentence(story)
 
-    return sentence + "."
+    return sentence
 
 # function to split a paragarph into proper sentences
 # returns a list of strings
+import re
 def split_into_sentences(paragraph):
     sentences = []
-    for sentence in split_into_sentences(paragraph):
-        # check to make sure that the first character is capital
-        if sentence[0].isupper():
-            sentences.append(sentence + ".")
-        else:
-            # if not, add it to the previous sentence
-            sentences[-1] += " " + sentence + "."
+    if type(paragraph) != str:
+        print("Paragraph must be a string.")
+        paragraph = " ".join(paragraph)
     
+    # Split the string based on . ? and !
+    punctuation_split = re.split(r"(\.|\?|!)", paragraph)
+
+    # check to make sure that things inside of quotes don't get split based on periods.
+    """ for i in range(len(punctuation_split)):
+        if punctuation_split[i] not in [".", "?", "!"]:
+            continue
+        if i < len(punctuation_split) - 1:
+            if re.search(r"[A-Za-z0-9]\s+\"", punctuation_split[i]):
+                continue
+        if i > 0:
+            if re.search(r"\"\s+[A-Za-z0-9]", punctuation_split[i-1]):
+                continue
+        sentences.append(punctuation_split[i]) """
+
+    punctuation_marks = [thing for thing in punctuation_split if thing in [".", "?", "!"]]
+    everything_else = [thing for thing in punctuation_split if thing not in [".", "?", "!"] and len(thing.strip()) > 0]
+    
+    if len(punctuation_marks) != len(everything_else):
+        # add extra periods to counteract the split
+        if len(punctuation_marks) > len(everything_else):
+            for i in range(len(punctuation_marks) - len(everything_else)):
+                everything_else.append("")
+        else:
+            for i in range(len(everything_else) - len(punctuation_marks)):
+                punctuation_marks.append(".")
+
+    # Write the code to check if sentences are proper
+    # check for capitalization and length
+    # If not, combine the sentences until they are proper
+    # Make sure exclamation points and questions marks are treated as ends of sentences also.
+    # You may assume that any given paragraph will be less than 500 characters in length.
+    # Remove all extra spaces.
+    for i, sentence in enumerate(everything_else):
+        if len(sentence) > 1:
+            if sentence[0] == " " and (sentence.strip()[0].isupper() or sentence[1] == '"'):
+                sentences.append(sentence + punctuation_marks[i])
+                continue
+            if sentence[0].isupper() and len(sentence) > 3:
+                sentences.append(sentence + punctuation_marks[i])
+            else:  
+                sentences[-1] += sentence + punctuation_marks[i]
+
+    sentences = [s.strip() for s in sentences]
     return sentences
 
 def find_verb(sentence):
@@ -64,6 +105,34 @@ def find_verb(sentence):
                 verbs.append(word)
     return verbs
 
+def separate_words(sentence):
+    words = sentence.split(" ")
+    shuffle(words)
+    return words
+
+def create_shuffle_question(sentence):
+    words = separate_words(sentence)
+    return " / ".join(words)
+
+def generate_rearrange_worksheet(story=random_story(), num=10):
+    sentences = split_into_sentences(" ".join(story))
+
+    if num > len(sentences):
+        num = len(sentences)
+    
+    shuffle(sentences)
+    sentences = sentences[:num]
+    
+    worksheet = "## Rearrange the Sentence\n\n"
+    for index, sentence in enumerate(sentences):
+        worksheet += f"{index + 1}. {create_shuffle_question(sentence)}\n"
+    
+    worksheet += "\n\n## Answer Key\n\n"
+    for index, sentence in enumerate(sentences):
+        worksheet += f"{index + 1}. {sentence}\n"
+    
+    print(worksheet)
+    return worksheet
 
 # nltk.download('brown')
 text = nltk.Text(word.lower() for word in nltk.corpus.brown.words())
@@ -118,9 +187,10 @@ lemmatizer = WordNetLemmatizer()
 def get_infinitive_form(word):
     return "to " + lemmatizer.lemmatize(word, pos="v")
 
-def generate_fill_worksheet():
+def generate_fill_worksheet(problems=None):
     sentences = []
-    problems = int(input("Enter the number of questions"))
+    if problems is None:
+        problems = int(input("Enter the number of questions"))
     while len(sentences) < problems:
         random_sentence = get_random_sentence(random_story())
         verbs = find_verb(random_sentence)
@@ -133,12 +203,12 @@ def generate_fill_worksheet():
         if new not in sentences:
             sentences.append([new + f" ({get_infinitive_form(verbs[0])})", verbs[0]])
 
-    worksheet = "\tFill in the Verb\n\n"
+    worksheet = "## Fill in the Verb\n\n"
 
     for index, sentence in enumerate(sentences):
         worksheet += f"{index + 1}. {sentence[0]}\n"
 
-    worksheet += "\n\n\tAnswer Key\n\n"
+    worksheet += "\n\n## Answer Key\n\n"
 
     for index, sentence in enumerate(sentences):
         worksheet += f"{index + 1}. {sentence[1]}\n"
@@ -169,11 +239,14 @@ def generate_vocab_worksheet(story=random_story(), word_limit=20):
 
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".lower()
 
-    worksheet = "\tVocabulary Worksheet\n\n"
+    worksheet = "## Vocabulary Worksheet\n\n"
+    # create a table with the words and possible definitions
+    worksheet += "| Answer | Word | Definition |\n| --- | --- | --- |\n"
     for index, word in enumerate(hardest_words):
-        worksheet += f"{index + 1}. {word}\t\t\t{alphabet[index]}. {definitions[index]}\n"
+        worksheet += f"| | {word} | {alphabet[index]}. {definitions[index]} |\n"
+    worksheet += "| | | |"
 
-    worksheet += "\n\n\tAnswer Key\n\n"
+    worksheet += "\n\n## Answer Key\n\n"
     worksheet += answers
     return worksheet
 
@@ -221,11 +294,11 @@ def generate_vocab_worksheet_interactive(story=random_story()):
 
     alphabet = "ABCDEFGHIJKLMNOPQRSTUVWXYZ".lower()
 
-    worksheet = "\tVocabulary Worksheet\n\n"
+    worksheet = "## Vocabulary Worksheet\n\n"
     for index, word in enumerate(hardest_words):
         worksheet += f"{index + 1}. {word}\t\t\t{alphabet[index]}. {definitions[index]}\n"
 
-    worksheet += "\n\n\tAnswer Key\n\n"
+    worksheet += "\n\n## Answer Key\n\n"
     worksheet += answers
     return worksheet
 
@@ -403,7 +476,9 @@ verb_types_str = ["infinitive", "past tense", "present participle", "past partic
 def generate_worksheets_for_verb(story=None, verb_type=1):
     if story is None:
         story = random_story()
-    sentences = shuffle(get_sentences_with_verb(story, verb_type))
+    sentences = get_sentences_with_verb(story, verb_type)
+    shuffle(sentences)
+
     sentence_with_blanks = []
     answers = []
     for sentence in sentences:
@@ -411,16 +486,38 @@ def generate_worksheets_for_verb(story=None, verb_type=1):
         answers.append(verb)
         sentence_with_blanks.append(sentence.replace(verb, "_" * 10 + ' (' + get_infinitive_form(verb) + ')', 1))
     
-    worksheet = f"\t{verb_types_str[verb_type].title()} Practice\n\n"
-    for index, sentence in enumerate(sentence_with_blanks):
-        worksheet += f"{index + 1}. {sentence}\n"
+    if len(sentence_with_blanks) > 0:
+        worksheet = f"## {verb_types_str[verb_type].title()} Practice\n\n"
+        for index, sentence in enumerate(sentence_with_blanks):
+            worksheet += f"{index + 1}. {sentence}\n"
 
-    worksheet += "\n\n\tAnswer Key\n\n"
-    for index, word in enumerate(answers):
-        worksheet += f"{index + 1}. {word}\n"
+        worksheet += "\n\n## Answer Key\n\n"
+        for index, word in enumerate(answers):
+            worksheet += f"{index + 1}. {word}\n"
 
-    print(worksheet)
-    return worksheet
+        print(worksheet)
+        return worksheet
+    return ""
+
+def generate_full_worksheet(story=random_story()):
+    full_worksheet = '# Worksheet\n\n'
+    for paragraph in story:
+        full_worksheet += paragraph + '\n'
+
+    full_worksheet += '\n\n'
+
+    # add worksheets for two verb types
+    for i in range(5):
+        full_worksheet += generate_worksheets_for_verb(story, verb_type=i)
+        full_worksheet += '\n\n'
+
+    # add definition worksheet
+    full_worksheet += generate_vocab_worksheet(story)
+
+    full_worksheet += generate_rearrange_worksheet(story, num=5)
+
+    print(full_worksheet)
+    return full_worksheet
 
 def get_nouns(sentence):
     words = word_tokenize(sentence)
