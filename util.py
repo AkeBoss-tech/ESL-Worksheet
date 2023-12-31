@@ -51,6 +51,8 @@ def get_random_sentence(story):
 # returns a list of strings
 import re
 def split_into_sentences(paragraph):
+    if '\n' in paragraph: paragraph = paragraph.replace('\n', ' ')
+
     sentences = []
     if type(paragraph) != str:
         print("Paragraph must be a string.")
@@ -317,6 +319,7 @@ def generate_vocab_worksheet_interactive(story=random_story()):
 
     worksheet += "\n\n## Answer Key\n\n"
     worksheet += answers
+
     return worksheet
 
 def get_definitions(word):
@@ -481,6 +484,8 @@ def get_verb_types(sentence):
 # 1 is infinitive, 2 is past tense, 3 is present participle, 4 is past participle, 5 is present simple
 def get_sentences_with_verb(story=random_story(), verb=1):
     text = " ".join(story)
+    text = text.replace("\n", " ")
+    
     sentences = []
     for sentence in split_into_sentences(text):
         if len(get_verb_types(sentence)[verb]) > 0:
@@ -505,8 +510,9 @@ def generate_worksheets_for_verb(story=None, verb_type=1):
     
     if len(sentence_with_blanks) > 0:
         worksheet = f"## {verb_types_str[verb_type].title()} Practice\n\n"
+        new_line = "\n"
         for index, sentence in enumerate(sentence_with_blanks):
-            worksheet += f"{index + 1}. {sentence}\n"
+            worksheet += f"{index + 1}. {sentence.replace(new_line, '')}\n"
 
         worksheet += "\n\n## Answer Key\n\n"
         for index, word in enumerate(answers):
@@ -534,6 +540,8 @@ def generate_full_worksheet(story=random_story()):
     full_worksheet += generate_rearrange_worksheet(story, num=10)
 
     print(full_worksheet)
+    with open("worksheet.txt", "w") as f:
+        f.write(full_worksheet)
     return full_worksheet
 
 def get_nouns(sentence):

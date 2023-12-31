@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Worksheet Generator</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+
+    <link rel="stylesheet" href="https://pyscript.net/releases/2023.11.1/core.css" />
+    <script type="module" src="https://pyscript.net/releases/2023.11.1/core.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="my-4">Welcome to the ESL Worksheet Generator!</h1>
+        <p class="lead">This is a simple tool that allows you to generate different types of worksheets. Click on the links below to generate a worksheet.</p>
+        <py-config>
+            packages = [
+                "nltk",
+                "markdown"
+            ]
+
+            plugins = [
+              "https://pyscript.net/latest/plugins/python/py_tutor.py",
+              "./py_list.py"
+            ]
+            [[fetch]]
+            files = ["./util.py", "ESL-stuff/"]
+        </py-config>
+        
+        <py-script>
+            from js import document
+            from datetime import datetime as dt
+            from pyodide.ffi.wrappers import add_event_listener
+            import util
+            import markdown
+        
+            def generate_worksheet(*args, **kws):
+                # Generate the worksheet
+                worksheet = util.generate_worksheet(util.random_story(), 20)
+                html = markdown.markdown(worksheet, extensions=['markdown.extensions.tables'])
+        
+                # Create a new element to display the worksheet
+                worksheet_element = document.createElement('div')
+                worksheet_element.innerHTML = html
+        
+                # Add the new element to the body of the document
+                document.body.appendChild(worksheet_element)
+        
+            def on_click(evt):
+                generate_worksheet()
+        
+            add_event_listener(
+              document.getElementById("generate-worksheet-btn"),
+              "click",
+              on_click
+            )
+        </py-script>
+        
+        <div class="py-box">
+            <button py-click="generate_worksheet()" id="generate-worksheet-btn" class="py-button">
+                Generate Worksheet!
+            </button>
+        </div>
+        
+        <py-repl id="my-repl" auto-generate="true"> </py-repl>
+    </div>
+</body>
+</html>

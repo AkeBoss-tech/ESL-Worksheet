@@ -1,153 +1,169 @@
-		Worksheet
+# Worksheet
 
-	Chicago is known as the "Windy City". Some people think this is because of the breeze that blows almost constantly. The city is located in the state of Illinois on the shore of one of the Great Lakes, Lake Michigan, which is the fifth largest freshwater body in the world. Chicago may also be called the windy city because of the wind tunnel effect created in downtown by many tall buildings. Skyscrapers are an important part of Chicago's history. The first skyscraper in the U.S. was built in the city in 1884. At only 10 stories, it was impressive for its time.  The skycraper was eventually demolished. Chicago is the home of other famous firsts. It was the birthplace of the refrigerated rail car, mail-order catalogs, the car radio, the TV remote control, the first Ferris wheel, the first steel rail road, the first planetarium in the Western Hemisphere. Chicago is also the home to the first blood bank and the first drive-in bank. It is also the home to The Lincoln Park Zoo, the oldest public zoo in the U.S. Maybe the windy city should be called the city of firsts. Chicago is the third most populous city in the U.S., after New York City and Los Angeles. A little more than two and a half million people live in the city that has more than 100 neighborhoods. President Barack Obama used to live in Chicago. Nearly 40 million people visit Chicago every year.  Many of them visit the Willis Tower. Formally known as the Sears Tower, it is the tallest building in the Western Hemisphere. It takes only a minute to get up to the 103rd floor Skydeck thanks to some of the fastest elevators in the world. From the Skydeck visitors can see four states: Indiana, Illinois, Michigan, and Wisconsin. 
-
-
-	Infinitive Practice
-
-1. Chicago may also __________ (to be) called the windy city because of the wind tunnel effect created in downtown by many tall buildings
-2. May__________ (to be) the windy city should be called the city of firsts
-3. President Barack Obama used to __________ (to live) in Chicago
-4. It takes only a minute to __________ (to get) up to the 103rd floor Skydeck thanks to some of the fastest elevators in the world
-5. From the Skydeck visitors can __________ (to see) four states: Indiana, Illinois, Michigan, and Wisconsin
+It was a hot day. The sun was shining in the sky. The air was sticky. It was a Sunday afternoon. Jane was thirsty. She went to the kitchen to get a drink. She opened her refrigerator. There was nothing to drink inside. Jane grabbed some lemons and a big pitcher. She cut the lemons in two. She filled the large pitcher with water. She squeezed the lemons into the pitcher of water. She opened her cabinet to get the sugar. She poured some sugar into the pitcher of water and lemon juice. She had made lemonade. She took a sip of the lemonade. It needed more sugar. She grabbed the bag of sugar and poured a little more. She took another sip. The lemonade tasted sweet. All it needed now was ice. She opened the refrigerator to grab some ice. There was no ice.
 
 
-	Answer Key
+## Infinitive Practice
 
-1. be
-2. be
-3. live
+1. She opened the refrigerator to __________ (to grab) some ice.
+2. There was nothing to __________ (to drink) inside.
+3. She went to the kitchen to __________ (to get) a drink.
+4. She opened her cabinet to __________ (to get) the sugar.
+
+
+## Answer Key
+
+1. grab
+2. drink
+3. get
 4. get
-5. see
 
 
-	Past Tense Practice
+## Past Tense Practice
 
-1. Chicago may also be called the windy city because of the wind tunnel effect __________ (to create) in downtown by many tall buildings
-2. __________ (to be) built in the city in 1884
-3. At only 10 stories, it __________ (to be) impressive for its time
-4.  The skycraper __________ (to be) eventually demolished
-5. It __________ (to be) the birthplace of the refrigerated rail car, mail-order catalogs, the car radio, the TV remote control, the first Ferris wheel, the first steel rail road, the first planetarium in the Western Hemisphere
-6. President Barack Obama __________ (to use) to live in Chicago
-
-
-	Answer Key
-
-1. created
-2. was
-3. was
-4. was
-5. was
-6. used
-
-
-	Present Participle Practice
-
-
-
-	Answer Key
-
-
-
-	Past Participle Practice
-
-1. Chicago is __________ (to know) as the "Windy City"
-2. The city is __________ (to locate) in the state of Illinois on the shore of one of the Great Lakes, Lake Michigan, which is the fifth largest freshwater body in the world
-3. Chicago may also be __________ (to call) the windy city because of the wind tunnel effect created in downtown by many tall buildings
-4. was __________ (to build) in the city in 1884
-5.  The skycraper was eventually __________ (to demolish)
-6. Maybe the windy city should be __________ (to call) the city of firsts
-7. Formally __________ (to know) as the Sears Tower, it is the tallest building in the Western Hemisphere
+1. She __________ (to take) a sip of the lemonade.
+2. Jane __________ (to grab) some lemons and a big pitcher.
+3. All it __________ (to need) now was ice.
+4. She __________ (to fill) the large pitcher with water.
+5. She __________ (to go) to the kitchen to get a drink.
+6. She __________ (to take) another sip.
+7. She __________ (to open) her refrigerator.
+8. She __________ (to grab) the bag of sugar and poured a little more.
+9. She __________ (to squeeze) the lemons into the pitcher of water.
+10. It __________ (to be) a hot day.
+11. She __________ (to open) her cabinet to get the sugar.
+12. She __________ (to pour) some sugar into the pitcher of water and lemon juice.
+13. The lemonade __________ (to taste) sweet.
+14. It __________ (to need) more sugar.
+15. She __________ (to open) the refrigerator to grab some ice.
+16. The sun __________ (to be) shining in the sky.
+17. There __________ (to be) no ice.
+18. It __________ (to be) a Sunday afternoon.
+19. She __________ (to cut) the lemons in two.
+20. There __________ (to be) nothing to drink inside.
+21. She __________ (to have) made lemonade.
+22. Jane __________ (to be) thirsty.
+23. The air __________ (to be) sticky.
 
 
-	Answer Key
+## Answer Key
 
-1. known
-2. located
-3. called
-4. built
-5. demolished
-6. called
-7. known
-
-
-	Present Simple Practice
-
-1. Chicago __________ (to be) known as the "Windy City"
-2. Some people __________ (to think) this is because of the breeze that blows almost constantly
-3. The city __________ (to be) located in the state of Illinois on the shore of one of the Great Lakes, Lake Michigan, which is the fifth largest freshwater body in the world
-4. Skyscrapers __________ (to be) an important part of Chicago's history
-5. Chicago __________ (to be) the home of other famous firsts
-6. Chicago __________ (to be) also the home to the first blood bank and the first drive-in bank
-7. It __________ (to be) also the home to The Lincoln Park Zoo, the oldest public zoo in the U.S
-8. Chicago __________ (to be) the third most populous city in the U.S., after New York City and Los Angeles
-9. A little more than two and a half million people __________ (to live) in the city that has more than 100 neighborhoods
-10. Nearly 40 million people __________ (to visit) Chicago every year
-11.  Many of them __________ (to visit) the Willis Tower
-12. Formally known as the Sears Tower, it __________ (to be) the tallest building in the Western Hemisphere
-13. It __________ (to take) only a minute to get up to the 103rd floor Skydeck thanks to some of the fastest elevators in the world
-
-
-	Answer Key
-
-1. is
-2. think
-3. is
-4. are
-5. is
-6. is
-7. is
-8. is
-9. live
-10. visit
-11. visit
-12. is
-13. takes
+1. took
+2. grabbed
+3. needed
+4. filled
+5. went
+6. took
+7. opened
+8. grabbed
+9. squeezed
+10. was
+11. opened
+12. poured
+13. tasted
+14. needed
+15. opened
+16. was
+17. was
+18. was
+19. cut
+20. was
+21. had
+22. was
+23. was
 
 
-	Vocabulary Worksheet
+## Present Participle Practice
 
-1. firsts			a. make very hot and dry
-2. tallest			b. a midwestern state in north-central United States
-3. illinois			c. a book or pamphlet containing an enumeration of things
-4. michigan			d. preserve by chilling
-5. lincoln			e. destroy completely
-6. sears			f. a building housing an instrument for projecting the positions of the planets onto a domed ceiling
-7. elevators			g. abounding in or exposed to the wind or breezes
-8. wisconsin			h. lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building
-9. planetarium			i. acting or moving or capable of acting or moving quickly
-10. blows			j. the executive and legislative and judicial branches of the federal government of the United States
-11. chicago			k. great in vertical dimension; high in stature
-12. indiana			l. 16th President of the United States; saved the Union during the American Civil War and emancipated the slaves; was assassinated by Booth (1809-1865)
-13. catalogs			m. a state in midwestern United States
-14. freshwater			n. a midwestern state in north central United States in the Great Lakes region
-15. fastest			o. English physician who was a pioneer in the study of the brain (1621-1675)
-16. u.s.			p. the first or highest in an ordering or series
-17. demolished			q. largest city in Illinois; a bustling Great Lakes port that extends 26 miles along the southwestern shoreline of Lake Michigan
-18. windy			r. water that is not salty
-19. refrigerated			s. a powerful stroke with the fist or a weapon
-20. willis			t. a tributary of the Mississippi River in Wisconsin
+1. The sun was __________ (to shin) in the sky.
 
 
-	Answer Key
+## Answer Key
 
-1. firsts - the first or highest in an ordering or series
-2. tallest - great in vertical dimension; high in stature
-3. illinois - a midwestern state in north-central United States
-4. michigan - a midwestern state in north central United States in the Great Lakes region
-5. lincoln - 16th President of the United States; saved the Union during the American Civil War and emancipated the slaves; was assassinated by Booth (1809-1865)
-6. sears - make very hot and dry
-7. elevators - lifting device consisting of a platform or cage that is raised and lowered mechanically in a vertical shaft in order to move people from one floor to another in a building
-8. wisconsin - a tributary of the Mississippi River in Wisconsin
-9. planetarium - a building housing an instrument for projecting the positions of the planets onto a domed ceiling
-10. blows - a powerful stroke with the fist or a weapon
-11. chicago - largest city in Illinois; a bustling Great Lakes port that extends 26 miles along the southwestern shoreline of Lake Michigan
-12. indiana - a state in midwestern United States
-13. catalogs - a book or pamphlet containing an enumeration of things
-14. freshwater - water that is not salty
-15. fastest - acting or moving or capable of acting or moving quickly
-16. u.s. - the executive and legislative and judicial branches of the federal government of the United States
-17. demolished - destroy completely
-18. windy - abounding in or exposed to the wind or breezes
-19. refrigerated - preserve by chilling
-20. willis - English physician who was a pioneer in the study of the brain (1621-1675)
+1. shining
+
+
+## Past Participle Practice
+
+1. She had __________ (to make) lemonade.
+
+
+## Answer Key
+
+1. made
+
+
+
+
+## Vocabulary Worksheet
+
+| Answer | Word | Definition |
+| --- | --- | --- |
+| | sunday | a. sweetened beverage of diluted lemon juice |
+| | thirsty | b. first day of the week; observed as a day of rest and worship by most Christians |
+| | shining | c. a mechanical device for gripping an object |
+| | squeezed | d. a share of the profits |
+| | tasted | e. water frozen in the solid state |
+| | sticky | f. have flavor; taste of something |
+| | grab | g. to compress with violence, out of natural shape or condition |
+| | cabinet | h. the work of making something smooth and shiny by rubbing or waxing it |
+| | grabbed | i. a piece of furniture resembling a cupboard with doors and shelves and drawers; for storage or display |
+| | lemonade | j. (baseball) the person who does the pitching |
+| | sip | k. a flexible container with a single opening |
+| | pitcher | l. needing moisture |
+| | lemon | m. English phonetician; one of the founders of modern phonetics (1845-1912) |
+| | juice | n. take hold of so as to seize or restrain or stop the motion of |
+| | poured | o. yellow oval fruit with juicy acidic flesh |
+| | cut | p. the liquid part that can be extracted from plant or animal tissue by squeezing or cooking |
+| | sweet | q. having the sticky properties of an adhesive |
+| | bag | r. cause to run |
+| | ice | s. a small drink |
+| | | |
+
+## Answer Key
+
+1. sunday - first day of the week; observed as a day of rest and worship by most Christians
+2. thirsty - needing moisture
+3. shining - the work of making something smooth and shiny by rubbing or waxing it
+4. squeezed - to compress with violence, out of natural shape or condition
+5. tasted - have flavor; taste of something
+6. sticky - having the sticky properties of an adhesive
+7. grab - a mechanical device for gripping an object
+8. cabinet - a piece of furniture resembling a cupboard with doors and shelves and drawers; for storage or display
+9. grabbed - take hold of so as to seize or restrain or stop the motion of
+10. lemonade - sweetened beverage of diluted lemon juice
+11. sip - a small drink
+12. pitcher - (baseball) the person who does the pitching
+13. lemon - yellow oval fruit with juicy acidic flesh
+14. juice - the liquid part that can be extracted from plant or animal tissue by squeezing or cooking
+15. poured - cause to run
+16. cut - a share of the profits
+17. sweet - English phonetician; one of the founders of modern phonetics (1845-1912)
+18. bag - a flexible container with a single opening
+19. ice - water frozen in the solid state
+## Rearrange the Sentence
+
+1. The / shining / in / was / sky. / sun / the
+2. get / cabinet / opened / to / her / sugar. / She / the
+3. Jane / was / thirsty.
+4. with / filled / large / She / the / water. / pitcher
+5. was / ice. / All / needed / now / it
+6. She / ice. / some / refrigerator / to / opened / the / grab
+7. There / ice. / was / no
+8. She / in / cut / lemons / two. / the
+9. juice. / poured / lemon / sugar / the / She / pitcher / some / water / into / of / and
+10. was / nothing / drink / There / inside. / to
+
+
+## Answer Key
+
+1. The sun was shining in the sky.
+2. She opened her cabinet to get the sugar.
+3. Jane was thirsty.
+4. She filled the large pitcher with water.
+5. All it needed now was ice.
+6. She opened the refrigerator to grab some ice.
+7. There was no ice.
+8. She cut the lemons in two.
+9. She poured some sugar into the pitcher of water and lemon juice.
+10. There was nothing to drink inside.

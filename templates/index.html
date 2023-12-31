@@ -40,6 +40,29 @@
                 </div>
             </li>
         </ul>
+        <!-- Add a text box that sends text to one of the pages and opens a new page -->
+        <!-- Format form with bootstrap -->
+        <h2 class="my-4">Generate a custom worksheet</h2>
+        <p class="lead">Enter a story below and click submit to generate a worksheet.</p>
+        <div class="rounded">
+            <form action="generate/custom">
+                <textarea id="story" name="story" class="form-control" rows="5" placeholder="Enter your story here..."></textarea>
+                <br>
+                <input type="submit" class="btn btn-dark" value="Submit">
+            </form>
+        </div>
     </div>
+    
+    <!-- <form action="static/generate-worksheet.html"> -->
+    <!--     <label for="story">Enter a story</label> -->
+    <!--     <textarea id="story" name="story" rows="5" cols="33"></textarea> -->
+    <!--     <input type="submit" value="Submit"> -->
+    <!-- </form> -->
 </body>
+<footer>
+    <div class="container">
+        <p class="text-center">Created by <a href="github.com/akeboss-tech">Akash Dubey</a></p>
+    </div>
+</footer>
+
 </html>

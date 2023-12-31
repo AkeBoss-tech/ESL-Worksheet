@@ -1,4 +1,4 @@
-from flask import Flask, render_template_string, render_template
+from flask import Flask, render_template_string, render_template, request
 import util
 import markdown
 
@@ -60,6 +60,17 @@ def generate_vocab_worksheet2(level):
     html = markdown.markdown(worksheet, extensions=['markdown.extensions.tables'])
     with open("output.html", "w") as f:
         f.write(html)
+    return render_template('default.html', markdown_content=html)
+
+@app.route('/generate/custom', methods=['GET'])
+def generate_custom():
+    # get the story from the form
+    story = request.args.get('story')
+    
+    story = story.split('\n')
+    print("hey bro", story)
+    worksheet = util.generate_full_worksheet(story)
+    html = markdown.markdown(worksheet, extensions=['markdown.extensions.tables'])
     return render_template('default.html', markdown_content=html)
 
 @app.route('/', methods=['GET'])
