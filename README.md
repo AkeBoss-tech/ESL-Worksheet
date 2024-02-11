@@ -3,6 +3,8 @@
 
 This is a Flask app that uses text scraped from [ESL Fast](https://www.eslfast.com/) to generate simple grammar worksheets. 
 
+![alt text](image.png)
+
 The GitHub pages offer a glimpse into some of the possible worksheets it can generate.
 
 To use this, clone this repository. Install nltk and flask. Then run `main.py`.

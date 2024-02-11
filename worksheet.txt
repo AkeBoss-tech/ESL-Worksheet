@@ -1,169 +1,235 @@
 # Worksheet
 
-It was a hot day. The sun was shining in the sky. The air was sticky. It was a Sunday afternoon. Jane was thirsty. She went to the kitchen to get a drink. She opened her refrigerator. There was nothing to drink inside. Jane grabbed some lemons and a big pitcher. She cut the lemons in two. She filled the large pitcher with water. She squeezed the lemons into the pitcher of water. She opened her cabinet to get the sugar. She poured some sugar into the pitcher of water and lemon juice. She had made lemonade. She took a sip of the lemonade. It needed more sugar. She grabbed the bag of sugar and poured a little more. She took another sip. The lemonade tasted sweet. All it needed now was ice. She opened the refrigerator to grab some ice. There was no ice.
+Michael is a freshman at UCLA. He is going to live in the dorms. Before then, he lived with his parents. His parents are happy for him, but sad that they won't get to see him as much. Michael has two roommates. One of them is his friend from high school. The other one is someone he does not know. Michael didn't bring that many things to the dorm. He knew that the dorms at UCLA are pretty small. When Michael and his parents entered the room, both of his roommates were already in there. "Michael! What's up?!" William exclaimed. Michael and William hugged. They were excited to be continuing their adventures in college. The other roommate David was quietly at his desk. He was already studying! "Hi, I'm Michael," he extended his hand to David. David shook his hand and continued studying. "Getting an early start huh?" Michael asked. "Yeah I'm trying to get straight As," David said. Michael assumed that he was very smart. "What is your major?" Michael asked. "Biology. I want to be a doctor," David said. It was now clear to Michael why David was studying so much. After Michael's parents helped him move in, they said their goodbyes. They wouldn't see him until Thanksgiving. "Hey, let's go try the dining hall food! I heard it's amazing," William said. "Sure! Let's invite David too even though he'll probably say no," Michael said. The boys asked if David wanted to come along. "Yeah I'm actually pretty hungry," he said. The boys all went to dinner together and all of them got along. Michael had a good feeling about UCLA. 
 
 
 ## Infinitive Practice
 
-1. She opened the refrigerator to __________ (to grab) some ice.
-2. There was nothing to __________ (to drink) inside.
-3. She went to the kitchen to __________ (to get) a drink.
-4. She opened her cabinet to __________ (to get) the sugar.
+1. "Yeah I'm trying to __________ (to get) straight As," David said.
+2. Michael didn't __________ (to bring) that many things to the dorm.
+3. The boys asked if David wanted to __________ (to come) along.
+4. The other one is someone he does not __________ (to know).
+5. The boys all went to __________ (to dinner) together and all of them got along.
+6. He is going to __________ (to live) in the dorms.
+7. After Michael's parents helped him __________ (to move) in, they said their goodbyes.
+8. "Hey, __________ (to let)'s go try the dining hall food.
+9. __________ (to Let)'s invite David too even though he'll probably say no," Michael said!
+10. They wouldn't __________ (to see) him until Thanksgiving.
+11. I want to __________ (to be) a doctor," David said.
+12. They were excited to __________ (to be) continuing their adventures in college.
+13. His parents are happy for him, but sad that they won't __________ (to get) to see him as much.
 
 
 ## Answer Key
 
-1. grab
-2. drink
-3. get
-4. get
+1. get
+2. bring
+3. come
+4. know
+5. dinner
+6. live
+7. move
+8. let
+9. Let
+10. see
+11. be
+12. be
+13. get
 
 
 ## Past Tense Practice
 
-1. She __________ (to take) a sip of the lemonade.
-2. Jane __________ (to grab) some lemons and a big pitcher.
-3. All it __________ (to need) now was ice.
-4. She __________ (to fill) the large pitcher with water.
-5. She __________ (to go) to the kitchen to get a drink.
-6. She __________ (to take) another sip.
-7. She __________ (to open) her refrigerator.
-8. She __________ (to grab) the bag of sugar and poured a little more.
-9. She __________ (to squeeze) the lemons into the pitcher of water.
-10. It __________ (to be) a hot day.
-11. She __________ (to open) her cabinet to get the sugar.
-12. She __________ (to pour) some sugar into the pitcher of water and lemon juice.
-13. The lemonade __________ (to taste) sweet.
-14. It __________ (to need) more sugar.
-15. She __________ (to open) the refrigerator to grab some ice.
-16. The sun __________ (to be) shining in the sky.
-17. There __________ (to be) no ice.
-18. It __________ (to be) a Sunday afternoon.
-19. She __________ (to cut) the lemons in two.
-20. There __________ (to be) nothing to drink inside.
-21. She __________ (to have) made lemonade.
-22. Jane __________ (to be) thirsty.
-23. The air __________ (to be) sticky.
+1. They __________ (to be) excited to be continuing their adventures in college.
+2. The boys all __________ (to go) to dinner together and all of them got along.
+3. "What is your major." Michael __________ (to ask)?
+4. David __________ (to shake) his hand and continued studying.
+5. It __________ (to be) now clear to Michael why David was studying so much.
+6. Michael __________ (to assume) that he was very smart.
+7. He __________ (to be) already studying.
+8. Michael and William __________ (to hug).
+9. Michael __________ (to have) a good feeling about UCLA.
+10. Let's invite David too even though he'll probably say no," Michael __________ (to say)!
+11. "Yeah I'm actually pretty hungry," he __________ (to say).
+12. After Michael's parents __________ (to help) him move in, they said their goodbyes.
+13. What's up?" William __________ (to exclaim)!
+14. The boys __________ (to ask) if David wanted to come along.
+15. "Getting an early start huh." Michael __________ (to ask)?
+16. Before then, he __________ (to live) with his parents.
+17. When Michael and his parents __________ (to enter) the room, both of his roommates were already in there.
+18. The other roommate David __________ (to be) quietly at his desk.
+19. I __________ (to hear) it's amazing," William said!
+20. Michael __________ (to do)n't bring that many things to the dorm.
+21. He __________ (to know) that the dorms at UCLA are pretty small.
+22. I want to be a doctor," David __________ (to say).
+23. "Yeah I'm trying to get straight As," David __________ (to say).
+24. "Hi, I'm Michael," he __________ (to extend) his hand to David!
 
 
 ## Answer Key
 
-1. took
-2. grabbed
-3. needed
-4. filled
-5. went
-6. took
-7. opened
-8. grabbed
-9. squeezed
-10. was
-11. opened
-12. poured
-13. tasted
-14. needed
-15. opened
-16. was
-17. was
+1. were
+2. went
+3. asked
+4. shook
+5. was
+6. assumed
+7. was
+8. hugged
+9. had
+10. said
+11. said
+12. helped
+13. exclaimed
+14. asked
+15. asked
+16. lived
+17. entered
 18. was
-19. cut
-20. was
-21. had
-22. was
-23. was
+19. heard
+20. did
+21. knew
+22. said
+23. said
+24. extended
 
 
 ## Present Participle Practice
 
-1. The sun was __________ (to shin) in the sky.
+1. It was now clear to Michael why David was __________ (to study) so much.
+2. He is __________ (to go) to live in the dorms.
+3. They were excited to be __________ (to continue) their adventures in college.
+4. He was already __________ (to study).
+5. David shook his hand and continued __________ (to study).
+6. "__________ (to Getting) an early start huh." Michael asked?
+7. "Hey, let's go try the __________ (to din) hall food.
+8. "Yeah I'm __________ (to try) to get straight As," David said.
 
 
 ## Answer Key
 
-1. shining
+1. studying
+2. going
+3. continuing
+4. studying
+5. studying
+6. Getting
+7. dining
+8. trying
 
 
 ## Past Participle Practice
 
-1. She had __________ (to make) lemonade.
+1. They were __________ (to excite) to be continuing their adventures in college.
 
 
 ## Answer Key
 
-1. made
+1. excited
 
 
+## Present Simple Practice
+
+1. He __________ (to be) going to live in the dorms.
+2. "Yeah I__________ (to 'm) actually pretty hungry," he said.
+3. Michael __________ (to be) a freshman at UCLA.
+4. One of them __________ (to be) his friend from high school.
+5. "What __________ (to be) your major." Michael asked?
+6. The other one __________ (to be) someone he does not know.
+7. He knew that the dorms at UCLA __________ (to be) pretty small.
+8. I heard it__________ (to 's) amazing," William said!
+9. What__________ (to 's) up?" William exclaimed!
+10. I __________ (to want) to be a doctor," David said.
+11. His p__________ (to be)nts are happy for him, but sad that they won't get to see him as much.
+12. Michael __________ (to have) two roommates.
+13. "Hi, I__________ (to 'm) Michael," he extended his hand to David!
+14. "Yeah I__________ (to 'm) trying to get straight As," David said.
+
+
+## Answer Key
+
+1. is
+2. 'm
+3. is
+4. is
+5. is
+6. is
+7. are
+8. 's
+9. 's
+10. want
+11. are
+12. has
+13. 'm
+14. 'm
 
 
 ## Vocabulary Worksheet
 
 | Answer | Word | Definition |
 | --- | --- | --- |
-| | sunday | a. sweetened beverage of diluted lemon juice |
-| | thirsty | b. first day of the week; observed as a day of rest and worship by most Christians |
-| | shining | c. a mechanical device for gripping an object |
-| | squeezed | d. a share of the profits |
-| | tasted | e. water frozen in the solid state |
-| | sticky | f. have flavor; taste of something |
-| | grab | g. to compress with violence, out of natural shape or condition |
-| | cabinet | h. the work of making something smooth and shiny by rubbing or waxing it |
-| | grabbed | i. a piece of furniture resembling a cupboard with doors and shelves and drawers; for storage or display |
-| | lemonade | j. (baseball) the person who does the pitching |
-| | sip | k. a flexible container with a single opening |
-| | pitcher | l. needing moisture |
-| | lemon | m. English phonetician; one of the founders of modern phonetics (1845-1912) |
-| | juice | n. take hold of so as to seize or restrain or stop the motion of |
-| | poured | o. yellow oval fruit with juicy acidic flesh |
-| | cut | p. the liquid part that can be extracted from plant or animal tissue by squeezing or cooking |
-| | sweet | q. having the sticky properties of an adhesive |
-| | bag | r. cause to run |
-| | ice | s. a small drink |
+| | david | a. the act of acquiring something |
+| | thanksgiving | b. a heterosexual person; someone having a sexual orientation to persons of the opposite sex |
+| | goodbyes | c. the science that studies living organisms |
+| | michael | d. patron saint of Wales (circa 520-600) |
+| | invite | e. squeeze (someone) tightly in your arms, usually with fondness |
+| | dorm | f. continue a certain state, condition, or activity |
+| | hugged | g. a colloquial expression for invitation |
+| | roommate | h. a college or university building containing living quarters for students |
+| | hi | i. a first-year undergraduate |
+| | excited | j. extend in scope or range or area |
+| | extended | k. fourth Thursday in November in the United States; second Monday in October in Canada; commemorates a feast held in 1621 by the Pilgrims and the Wampanoag |
+| | freshman | l. arouse or elicit a feeling |
+| | biology | m. a wild and exciting undertaking (not necessarily lawful) |
+| | adventures | n. an expression of greeting |
+| | continuing | o. an associate who shares a room with you |
+| | smart | p. (Old Testament) the guardian archangel of the Jews |
+| | getting | q. a kind of pain such as that caused by a wound or a burn or a sore |
+| | straight | r. a farewell remark |
 | | | |
 
 ## Answer Key
 
-1. sunday - first day of the week; observed as a day of rest and worship by most Christians
-2. thirsty - needing moisture
-3. shining - the work of making something smooth and shiny by rubbing or waxing it
-4. squeezed - to compress with violence, out of natural shape or condition
-5. tasted - have flavor; taste of something
-6. sticky - having the sticky properties of an adhesive
-7. grab - a mechanical device for gripping an object
-8. cabinet - a piece of furniture resembling a cupboard with doors and shelves and drawers; for storage or display
-9. grabbed - take hold of so as to seize or restrain or stop the motion of
-10. lemonade - sweetened beverage of diluted lemon juice
-11. sip - a small drink
-12. pitcher - (baseball) the person who does the pitching
-13. lemon - yellow oval fruit with juicy acidic flesh
-14. juice - the liquid part that can be extracted from plant or animal tissue by squeezing or cooking
-15. poured - cause to run
-16. cut - a share of the profits
-17. sweet - English phonetician; one of the founders of modern phonetics (1845-1912)
-18. bag - a flexible container with a single opening
-19. ice - water frozen in the solid state
+1. david - patron saint of Wales (circa 520-600)
+2. thanksgiving - fourth Thursday in November in the United States; second Monday in October in Canada; commemorates a feast held in 1621 by the Pilgrims and the Wampanoag
+3. goodbyes - a farewell remark
+4. michael - (Old Testament) the guardian archangel of the Jews
+5. invite - a colloquial expression for invitation
+6. dorm - a college or university building containing living quarters for students
+7. hugged - squeeze (someone) tightly in your arms, usually with fondness
+8. roommate - an associate who shares a room with you
+9. hi - an expression of greeting
+10. excited - arouse or elicit a feeling
+11. extended - extend in scope or range or area
+12. freshman - a first-year undergraduate
+13. biology - the science that studies living organisms
+14. adventures - a wild and exciting undertaking (not necessarily lawful)
+15. continuing - continue a certain state, condition, or activity
+16. smart - a kind of pain such as that caused by a wound or a burn or a sore
+17. getting - the act of acquiring something
+18. straight - a heterosexual person; someone having a sexual orientation to persons of the opposite sex
 ## Rearrange the Sentence
 
-1. The / shining / in / was / sky. / sun / the
-2. get / cabinet / opened / to / her / sugar. / She / the
-3. Jane / was / thirsty.
-4. with / filled / large / She / the / water. / pitcher
-5. was / ice. / All / needed / now / it
-6. She / ice. / some / refrigerator / to / opened / the / grab
-7. There / ice. / was / no
-8. She / in / cut / lemons / two. / the
-9. juice. / poured / lemon / sugar / the / She / pitcher / some / water / into / of / and
-10. was / nothing / drink / There / inside. / to
+1. wanted / boys / The / if / along. / asked / come / David / to
+2. I'm / pretty / hungry," / said. / "Yeah / he / actually
+3. assumed / Michael / that / smart. / was / very / he
+4. "Michael!
+5. "Biology.
+6. to / said. / want / be / a / doctor," / I / David
+7. move / their / said / him / Michael's / goodbyes. / in, / parents / After / they / helped
+8. has / two / roommates. / Michael
+9. him / much. / as / see / happy / him, / parents / that / sad / but / for / His / won't / get / are / to / they
+10. try / hall / the / dining / food. / go / "Hey, / let's
 
 
 ## Answer Key
 
-1. The sun was shining in the sky.
-2. She opened her cabinet to get the sugar.
-3. Jane was thirsty.
-4. She filled the large pitcher with water.
-5. All it needed now was ice.
-6. She opened the refrigerator to grab some ice.
-7. There was no ice.
-8. She cut the lemons in two.
-9. She poured some sugar into the pitcher of water and lemon juice.
-10. There was nothing to drink inside.
+1. The boys asked if David wanted to come along.
+2. "Yeah I'm actually pretty hungry," he said.
+3. Michael assumed that he was very smart.
+4. "Michael!
+5. "Biology.
+6. I want to be a doctor," David said.
+7. After Michael's parents helped him move in, they said their goodbyes.
+8. Michael has two roommates.
+9. His parents are happy for him, but sad that they won't get to see him as much.
+10. "Hey, let's go try the dining hall food.
